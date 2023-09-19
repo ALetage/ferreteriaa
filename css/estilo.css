@@ -10,8 +10,23 @@ body {
   background-color: rgb(103, 212, 30);
 }
 
+
+
+.logo-pagina {
+  margin-left: 45%;
+  width: 10rem;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  transition: transform 3s ease-in; /* Transición de giro brusca al inicio */
+}
+
+.logo-pagina:hover {
+  transform: rotate(720deg); /* Gira 45 grados cuando se pasa el mouse por encima */
+}
+
 .header {
-  background-color: #000;
+
+    background-color: #9ff565;
   color: #009900;
   padding: 20px 0;
 }
@@ -40,7 +55,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #fff;
+  color: #62bb0e;
 }
 
 .navbar-nav .nav-item.active .nav-link {
@@ -173,5 +188,49 @@ body {
   color: #fff;
   padding: 10px;
 }
+.content {
+  text-align: center;
+  padding: 20px;
+}
 
-/*# sourceMappingURL=estilo.css.map */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #f0f0f0; /* Cambia el color de fondo a tu preferencia */
+  padding: 50px;
+
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Agrega una transición al color de fondo */
+}
+
+.form-container label,
+.form-container input,
+.form-container textarea,
+.form-container button {
+  margin-bottom: 2rem;
+
+  width: 100%;
+  max-width: 400px; /* Ajusta el ancho máximo según tu preferencia */
+}
+
+.form-container button {
+  background-color: #007bff; /* Cambia el color del botón a tu preferencia */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Agrega una transición al color de fondo del botón */
+}
+
+.form-container button:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el mouse por encima */
+}
+
+@media (max-width: 500px) {
+  .logo-pagina {
+    margin-left: 30%; /* Cambia el margen izquierdo al 30% */
+  }
+}

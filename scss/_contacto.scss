@@ -1,0 +1,37 @@
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0; /* Cambia el color de fondo a tu preferencia */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Agrega una transición al color de fondo */
+}
+
+.form-container label,
+.form-container input,
+.form-container textarea,
+.form-container button {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo según tu preferencia */
+}
+
+.form-container button {
+    background-color: #007bff; /* Cambia el color del botón a tu preferencia */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agrega una transición al color de fondo del botón */
+}
+
+.form-container button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse por encima */
+}
