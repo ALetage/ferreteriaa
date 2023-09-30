@@ -1,0 +1,14 @@
+// Mixin para botones
+@mixin boton-personalizado {
+  background-color: $color-boton-fondo;
+  color: $color-boton-texto;
+  border: none;
+  &:hover {
+    background-color: darken($color-boton-fondo, 10%);
+  }
+}
+
+// Uso del mixin en un selector
+.btn-color {
+  @include boton-personalizado;
+}

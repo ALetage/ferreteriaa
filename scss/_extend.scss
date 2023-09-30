@@ -1,0 +1,17 @@
+// Extend para tarjetas
+%tarjeta {
+    border: $borde-card;
+    margin-bottom: $espaciado;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  // Uso del extend en un selector
+  .card {
+    @extend %tarjeta;
+  }
+  
+  // Uso del extend en otro selector
+  .product {
+    @extend %tarjeta;
+  }
+  
